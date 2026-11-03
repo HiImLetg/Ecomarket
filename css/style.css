@@ -1,0 +1,9 @@
+/* Estilos propios de EcoMarket. Responsable: Miembro 2 */
+:root {
+  --verde-principal: #2e7d32;
+  --fondo: #f7f5ef;
+}
+
+body {
+  background-color: var(--fondo);
+}
