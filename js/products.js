@@ -34,7 +34,7 @@ const productos = [
     categoria: "Cuidado personal",
     precio: 3.50,
     descripcion: "Cepillo biodegradable con cerdas suaves de fibras vegetales.",
-    imagen: "img/CepilloDeMadera.png",
+    imagen: "img/cepillo.jpeg",
     alt: "Cepillo de dientes de bambú sobre fondo neutro"
   },
   {
@@ -43,7 +43,7 @@ const productos = [
     categoria: "Cuidado personal",
     precio: 7.50,
     descripcion: "Champú ecológico sin plástico, rinde más de 50 lavados.",
-    imagen: "img/ChampuSolido.png",
+    imagen: "img/ShampooCoco.jpeg",
     alt: "Pastilla de champú sólido natural"
   },
   {
