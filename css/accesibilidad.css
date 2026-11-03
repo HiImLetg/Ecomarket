@@ -1,6 +1,12 @@
-/* Accesibilidad. Responsable: Miembro 4 */
+/* Accesibilidad y QA. Responsable: Miembro 4 */
 
-/* Enlace "Saltar al contenido": solo se ve al enfocarlo con Tab */
+/* Evita que la navbar fija tape secciones o el foco al navegar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Enlace "Saltar al contenido" */
 .skip-link {
   position: absolute;
   left: 0.5rem;
@@ -9,17 +15,40 @@
   color: #fff;
   padding: 0.5rem 1rem;
   z-index: 2000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 0.4rem 0.4rem;
 }
 .skip-link:focus {
-  top: 0.5rem;
+  top: 0;
 }
 
-/* Foco visible para navegar con teclado */
+/* Foco visible claro para teclado */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid #ffbf47;
-  outline-offset: 2px;
+  outline: 3px solid #ffbf47 !important;
+  outline-offset: 2px !important;
+}
+
+/* Ajustes de contraste para cumplir WCAG 2.1 AA (> 4.5:1) */
+.text-muted {
+  color: #555b57 !important;
+}
+
+.eyebrow {
+  color: #163a2b !important;
+}
+
+/* Reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  .producto-card,
+  .btn-eco {
+    transition: none !important;
+  }
 }

@@ -68,6 +68,7 @@
     <span class="eyebrow">Consume menos, elige mejor</span>
     <h2 class="display-6">Nuestro catálogo</h2>
     <p class="mb-4">Ocho esenciales para vivir de forma más consciente, a tu ritmo.</p>
+    <p id="estado-busqueda" class="visually-hidden" role="status" aria-live="polite"></p>
 
     <div class="row g-3 mb-3">
       <div class="col-md-9">
@@ -84,7 +85,7 @@
 
     <div id="catalogo" class="row g-4" aria-live="polite"></div>
 
-    <div id="sin-resultados" class="sin-resultados text-center d-none">
+    <div id="sin-resultados" class="sin-resultados text-center d-none" role="status">
       <i class="bi bi-search" aria-hidden="true"></i>
       <h3 class="h5">No se encontraron productos</h3>
       <p>Prueba con otra palabra o cambia la categoría.</p>
@@ -120,6 +121,9 @@
       <div class="col-lg-7">
         <form class="form-contacto card" action="#" method="post">
           <h3 class="h5">Envíanos un mensaje</h3>
+          <div id="alerta-exito" class="alert alert-success d-none mb-3" role="status" aria-live="polite">
+            ¡Gracias por tu mensaje! Nos pondremos en contacto contigo muy pronto.
+          </div>
           <div class="mb-3">
             <label for="nombre" class="form-label fw-semibold small">Nombre</label>
             <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" autocomplete="name" required>
