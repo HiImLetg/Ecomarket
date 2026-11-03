@@ -69,3 +69,28 @@ filtro.addEventListener("change", filtrar);
 
 cargarCategorias();
 mostrar(productos);
+
+// Validación y mensaje de confirmación del formulario de contacto
+const formContacto = document.querySelector(".form-contacto");
+const alertaExito = document.getElementById("alerta-exito");
+
+if (formContacto) {
+  formContacto.addEventListener("submit", function (e) {
+    e.preventDefault(); // 1. Evita que la página se recargue
+
+    // 2. Comprueba que todos los campos requeridos estén llenos
+    if (formContacto.checkValidity()) {
+      if (alertaExito) {
+        alertaExito.classList.remove("d-none"); // Muestra la alerta de éxito
+      }
+      formContacto.reset(); // Limpia los campos del formulario
+      
+      // 3. Oculta el mensaje automáticamente después de 5 segundos
+      setTimeout(() => {
+        if (alertaExito) alertaExito.classList.add("d-none");
+      }, 20000);
+    } else {
+      formContacto.reportValidity(); // Muestra los globos de error del navegador si falta algo
+    }
+  });
+}
