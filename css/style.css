@@ -1,9 +1,47 @@
-/* Estilos propios de EcoMarket. Responsable: Miembro 2 */
 :root {
-  --verde-principal: #2e7d32;
-  --fondo: #f7f5ef;
+  --eco-verde: #1f4d3a;
+  --eco-verde-hover: #163a2b;
+  --eco-crema: #f8f5ee;
+  --eco-salvia: #eef2ea;
+  --eco-texto: #4a4f4c;
+  --eco-borde: #e3e6df;
 }
 
 body {
-  background-color: var(--fondo);
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--eco-crema);
+  color: var(--eco-texto);
 }
+
+h1, h2, h3 { color: var(--eco-verde); font-weight: 700; letter-spacing: -0.02em; }
+
+.eyebrow {
+  display: block;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--eco-verde);
+  margin-bottom: .75rem;
+}
+
+.btn-eco {
+  background: var(--eco-verde);
+  border-color: var(--eco-verde);
+  color: #fff;
+  font-weight: 600;
+  border-radius: .5rem;
+  padding: .6rem 1.1rem;
+}
+.btn-eco:hover { background: var(--eco-verde-hover); border-color: var(--eco-verde-hover); color: #fff; }
+
+.btn-outline-eco {
+  background: #fff;
+  border: 1px solid var(--eco-borde);
+  color: var(--eco-verde);
+  font-weight: 600;
+  border-radius: .5rem;
+}
+.btn-outline-eco:hover { background: var(--eco-salvia); color: var(--eco-verde); }
+
+.bg-salvia { background: var(--eco-salvia); }
