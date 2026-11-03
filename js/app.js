@@ -10,13 +10,13 @@ function crearTarjeta(p) {
     : "";
   return `
     <div class="col-12 col-md-6 col-lg-3">
-      <div class="card h-100">
+      <div class="card h-100 producto-card">
         ${imagen}
         <div class="card-body">
-          <h3 class="h5 card-title">${p.nombre}</h3>
-          <p class="text-muted mb-1">${p.categoria}</p>
+          <span class="producto-categoria">${p.categoria}</span>
+          <h3 class="h5 card-title mt-1">${p.nombre}</h3>
           <p class="card-text">${p.descripcion}</p>
-          <p class="fw-bold">$${p.precio.toFixed(2)}</p>
+          <p class="producto-precio">$${p.precio.toFixed(2)}</p>
         </div>
       </div>
     </div>`;

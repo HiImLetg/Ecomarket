@@ -27,5 +27,50 @@ const productos = [
     descripcion: "Bolsa resistente para tus compras diarias.",
     imagen: "",
     alt: "Bolsa de tela reutilizable color beige"
+  },
+  {
+    id: 4,
+    nombre: "Cepillo de dientes de bambú",
+    categoria: "Cuidado personal",
+    precio: 3.50,
+    descripcion: "Cepillo biodegradable con cerdas suaves de fibras vegetales.",
+    imagen: "",
+    alt: "Cepillo de dientes de bambú sobre fondo neutro"
+  },
+  {
+    id: 5,
+    nombre: "Champú sólido de coco",
+    categoria: "Cuidado personal",
+    precio: 7.50,
+    descripcion: "Champú ecológico sin plástico, rinde más de 50 lavados.",
+    imagen: "",
+    alt: "Pastilla de champú sólido natural"
+  },
+  {
+    id: 6,
+    nombre: "Café orgánico de grano",
+    categoria: "Alimentos",
+    precio: 9.80,
+    descripcion: "Café 100% arábica de comercio justo y cultivo sostenible.",
+    imagen: "",
+    alt: "Bolsa de granos de café orgánico"
+  },
+  {
+    id: 7,
+    nombre: "Té verde bio en hebras",
+    categoria: "Alimentos",
+    precio: 6.20,
+    descripcion: "Mezcla de té verde ecológico antioxidante (100g).",
+    imagen: "",
+    alt: "Tazón con hojas secas de té verde"
+  },
+  {
+    id: 8,
+    nombre: "Crema facial hidratante bio",
+    categoria: "Cuidado personal",
+    precio: 14.90,
+    descripcion: "Crema vegana con ingredientes naturales en envase de vidrio.",
+    imagen: "",
+    alt: "Frasco de crema facial natural en tarro de vidrio"
   }
 ];
