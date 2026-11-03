@@ -59,3 +59,5 @@ h1, h2, h3 { color: var(--eco-verde); font-weight: 700; letter-spacing: -0.02em;
 
 /* Evita que la navbar fija tape los títulos al navegar con los enlaces */
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+/* ===== Hero ===== */
+.hero-img { width: 100%; border-radius: 1.25rem; box-shadow: 0 10px 30px rgba(31,77,58,.12); }
