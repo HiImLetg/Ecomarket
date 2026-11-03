@@ -54,5 +54,23 @@ const productos = [
     descripcion: "Café 100% arábica de comercio justo y cultivo sostenible.",
     imagen: "",
     alt: "Bolsa de granos de café orgánico"
+  },
+  {
+    id: 7,
+    nombre: "Té verde bio en hebras",
+    categoria: "Alimentos",
+    precio: 6.20,
+    descripcion: "Mezcla de té verde ecológico antioxidante (100g).",
+    imagen: "",
+    alt: "Tazón con hojas secas de té verde"
+  },
+  {
+    id: 8,
+    nombre: "Crema facial hidratante bio",
+    categoria: "Cuidado personal",
+    precio: 14.90,
+    descripcion: "Crema vegana con ingredientes naturales en envase de vidrio.",
+    imagen: "",
+    alt: "Frasco de crema facial natural en tarro de vidrio"
   }
 ];
