@@ -6,7 +6,7 @@ const sinResultados = document.getElementById("sin-resultados");
 
 function crearTarjeta(p) {
   const imagen = p.imagen
-    ? `<img src="${p.imagen}" class="card-img-top" alt="${p.alt}">`
+    ? `<img src="${p.imagen}" class="card-img-top" alt="${p.alt} loading="lazy">`
     : "";
   return `
     <div class="col-12 col-md-6 col-lg-3">
