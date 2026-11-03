@@ -27,15 +27,32 @@ function mostrar(lista) {
   sinResultados.classList.toggle("d-none", lista.length > 0);
 }
 
+// Función para eliminar tildes/acentos de un texto
+function quitarTildes(texto) {
+  return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 function filtrar() {
-  const texto = buscador.value.trim().toLowerCase();
+  if (!buscador || !filtro) return;
+  
+  // Convertimos a minúsculas y quitamos tildes del texto buscado
+  const texto = quitarTildes(buscador.value.trim().toLowerCase());
   const categoria = filtro.value;
-  const resultado = productos.filter(p =>
-    p.nombre.toLowerCase().includes(texto) &&
-    (categoria === "todas" || p.categoria === categoria)
-  );
+
+  const resultado = productos.filter(p => {
+    // Convertimos a minúsculas y quitamos tildes del nombre y la descripción
+    const nombreLimpio = quitarTildes(p.nombre.toLowerCase());
+    const descripcionLimpia = quitarTildes(p.descripcion.toLowerCase());
+
+    const coincideTexto = nombreLimpio.includes(texto) || descripcionLimpia.includes(texto);
+    const coincideCategoria = (categoria === "todas" || p.categoria === categoria);
+
+    return coincideTexto && coincideCategoria;
+  });
+
   mostrar(resultado);
 }
+
 
 function cargarCategorias() {
   const categorias = [...new Set(productos.map(p => p.categoria))];
