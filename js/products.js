@@ -7,7 +7,7 @@ const productos = [
     categoria: "Hogar",
     precio: 12.5,
     descripcion: "Botella reutilizable con tapa de bambú.",
-    imagen: "",
+    imagen: "img/BotellaDeAcero.png",
     alt: "Botella reutilizable con tapa de bambú"
   },
   {
