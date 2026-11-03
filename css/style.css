@@ -45,3 +45,17 @@ h1, h2, h3 { color: var(--eco-verde); font-weight: 700; letter-spacing: -0.02em;
 .btn-outline-eco:hover { background: var(--eco-salvia); color: var(--eco-verde); }
 
 .bg-salvia { background: var(--eco-salvia); }
+
+.navbar-eco { background: var(--eco-crema); border-bottom: 1px solid var(--eco-borde); }
+.navbar-eco .navbar-brand { color: var(--eco-verde); font-weight: 700; }
+.marca-icono {
+  display: inline-grid; place-items: center;
+  width: 1.9rem; height: 1.9rem;
+  background: var(--eco-verde); color: #fff;
+  border-radius: 50%; font-size: .95rem;
+}
+.navbar-eco .nav-link { color: var(--eco-texto); font-size: .9rem; }
+.navbar-eco .nav-link:hover { color: var(--eco-verde); }
+
+/* Evita que la navbar fija tape los títulos al navegar con los enlaces */
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
