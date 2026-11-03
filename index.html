@@ -63,27 +63,34 @@
 </section>
 
     <!-- CATÁLOGO (Miembro 2 diseño, Miembro 3 lógica) -->
-    <section id="catalogo-seccion" class="py-5">
-      <div class="container">
-        <h2>Catálogo</h2>
+    <section id="catalogo-seccion" class="py-5 bg-salvia">
+  <div class="container">
+    <span class="eyebrow">Consume menos, elige mejor</span>
+    <h2 class="display-6">Nuestro catálogo</h2>
+    <p class="mb-4">Ocho esenciales para vivir de forma más consciente, a tu ritmo.</p>
 
-        <div class="row g-3 mb-4">
-          <div class="col-md-8">
-            <label for="buscador" class="form-label">Buscar productos</label>
-            <input type="search" id="buscador" class="form-control" placeholder="Ej: botella">
-          </div>
-          <div class="col-md-4">
-            <label for="filtro-categoria" class="form-label">Categoría</label>
-            <select id="filtro-categoria" class="form-select">
-              <option value="todas">Todas</option>
-            </select>
-          </div>
-        </div>
-
-        <div id="catalogo" class="row g-4" aria-live="polite"></div>
-        <p id="sin-resultados" class="d-none">No se encontraron productos.</p>
+    <div class="row g-3 mb-3">
+      <div class="col-md-9">
+        <label for="buscador" class="form-label fw-semibold small">Buscar productos</label>
+        <input type="search" id="buscador" class="form-control" placeholder="Buscar productos...">
       </div>
-    </section>
+      <div class="col-md-3">
+        <label for="filtro-categoria" class="form-label fw-semibold small">Categoría</label>
+        <select id="filtro-categoria" class="form-select">
+          <option value="todas">Todas las categorías</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="catalogo" class="row g-4" aria-live="polite"></div>
+
+    <div id="sin-resultados" class="sin-resultados text-center d-none">
+      <i class="bi bi-search" aria-hidden="true"></i>
+      <h3 class="h5">No se encontraron productos</h3>
+      <p>Prueba con otra palabra o cambia la categoría.</p>
+    </div>
+  </div>
+</section>
 
     <!-- CONTACTO (Miembro 2) -->
     <section id="contacto" class="py-5">

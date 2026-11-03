@@ -61,3 +61,26 @@ h1, h2, h3 { color: var(--eco-verde); font-weight: 700; letter-spacing: -0.02em;
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
 /* ===== Hero ===== */
 .hero-img { width: 100%; border-radius: 1.25rem; box-shadow: 0 10px 30px rgba(31,77,58,.12); }
+/* ===== Catálogo ===== */
+.form-control, .form-select { border-color: var(--eco-borde); border-radius: .5rem; }
+
+.producto-card {
+  border: 1px solid var(--eco-borde);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  transition: transform .2s, box-shadow .2s;
+}
+.producto-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(31,77,58,.12); }
+.producto-card img { aspect-ratio: 4 / 3; object-fit: cover; }
+.producto-categoria {
+  font-size: .65rem; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--eco-verde);
+}
+.producto-precio { font-weight: 600; color: var(--eco-verde); margin-bottom: .5rem; }
+.producto-card .card-text { font-size: .8rem; }
+
+.sin-resultados {
+  background: #fff; border-radius: 1rem; padding: 3rem 1rem;
+}
+.sin-resultados i { font-size: 2rem; color: var(--eco-verde); }
