@@ -7,7 +7,7 @@ const productos = [
     categoria: "Hogar",
     precio: 12.5,
     descripcion: "Botella reutilizable con tapa de bambú.",
-    imagen: "",
+    imagen: "img/BotellaDeAcero.png",
     alt: "Botella reutilizable con tapa de bambú"
   },
   {
@@ -16,7 +16,7 @@ const productos = [
     categoria: "Cuidado personal",
     precio: 4.0,
     descripcion: "Jabón natural sin químicos agresivos.",
-    imagen: "",
+    imagen: "img/JabonDeAvena.png",
     alt: "Barra de jabón artesanal de avena"
   },
   {
@@ -25,7 +25,7 @@ const productos = [
     categoria: "Hogar",
     precio: 6.0,
     descripcion: "Bolsa resistente para tus compras diarias.",
-    imagen: "",
+    imagen: "img/BolsaDeAlgodon.png",
     alt: "Bolsa de tela reutilizable color beige"
   },
   {
@@ -34,7 +34,7 @@ const productos = [
     categoria: "Cuidado personal",
     precio: 3.50,
     descripcion: "Cepillo biodegradable con cerdas suaves de fibras vegetales.",
-    imagen: "",
+    imagen: "img/CepilloDeMadera.png",
     alt: "Cepillo de dientes de bambú sobre fondo neutro"
   },
   {
@@ -43,7 +43,7 @@ const productos = [
     categoria: "Cuidado personal",
     precio: 7.50,
     descripcion: "Champú ecológico sin plástico, rinde más de 50 lavados.",
-    imagen: "",
+    imagen: "img/ChampuSolido.png",
     alt: "Pastilla de champú sólido natural"
   },
   {
@@ -52,7 +52,7 @@ const productos = [
     categoria: "Alimentos",
     precio: 9.80,
     descripcion: "Café 100% arábica de comercio justo y cultivo sostenible.",
-    imagen: "",
+    imagen: "img/CafeOrganico.png",
     alt: "Bolsa de granos de café orgánico"
   },
   {
@@ -61,7 +61,7 @@ const productos = [
     categoria: "Alimentos",
     precio: 6.20,
     descripcion: "Mezcla de té verde ecológico antioxidante (100g).",
-    imagen: "",
+    imagen: "img/TeVerdeOrganico.png",
     alt: "Tazón con hojas secas de té verde"
   },
   {
@@ -70,7 +70,7 @@ const productos = [
     categoria: "Cuidado personal",
     precio: 14.90,
     descripcion: "Crema vegana con ingredientes naturales en envase de vidrio.",
-    imagen: "",
+    imagen: "img/CremaBio.png",
     alt: "Frasco de crema facial natural en tarro de vidrio"
   }
 ];
