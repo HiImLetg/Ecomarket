@@ -27,5 +27,14 @@ const productos = [
     descripcion: "Bolsa resistente para tus compras diarias.",
     imagen: "",
     alt: "Bolsa de tela reutilizable color beige"
+  },
+  {
+    id: 4,
+    nombre: "Cepillo de dientes de bambú",
+    categoria: "Cuidado personal",
+    precio: 3.50,
+    descripcion: "Cepillo biodegradable con cerdas suaves de fibras vegetales.",
+    imagen: "",
+    alt: "Cepillo de dientes de bambú sobre fondo neutro"
   }
 ];
