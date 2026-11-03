@@ -1,9 +1,110 @@
-/* Estilos propios de EcoMarket. Responsable: Miembro 2 */
 :root {
-  --verde-principal: #2e7d32;
-  --fondo: #f7f5ef;
+  --eco-verde: #1f4d3a;
+  --eco-verde-hover: #163a2b;
+  --eco-crema: #f8f5ee;
+  --eco-salvia: #eef2ea;
+  --eco-texto: #4a4f4c;
+  --eco-borde: #e3e6df;
 }
 
 body {
-  background-color: var(--fondo);
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--eco-crema);
+  color: var(--eco-texto);
+}
+
+h1, h2, h3 { color: var(--eco-verde); font-weight: 700; letter-spacing: -0.02em; }
+
+.eyebrow {
+  display: block;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--eco-verde);
+  margin-bottom: .75rem;
+}
+
+.btn-eco {
+  background: var(--eco-verde);
+  border-color: var(--eco-verde);
+  color: #fff;
+  font-weight: 600;
+  border-radius: .5rem;
+  padding: .6rem 1.1rem;
+}
+.btn-eco:hover { background: var(--eco-verde-hover); border-color: var(--eco-verde-hover); color: #fff; }
+
+.btn-outline-eco {
+  background: #fff;
+  border: 1px solid var(--eco-borde);
+  color: var(--eco-verde);
+  font-weight: 600;
+  border-radius: .5rem;
+}
+.btn-outline-eco:hover { background: var(--eco-salvia); color: var(--eco-verde); }
+
+.bg-salvia { background: var(--eco-salvia); }
+
+.navbar-eco { background: var(--eco-crema); border-bottom: 1px solid var(--eco-borde); }
+.navbar-eco .navbar-brand { color: var(--eco-verde); font-weight: 700; }
+.marca-icono {
+  display: inline-grid; place-items: center;
+  width: 1.9rem; height: 1.9rem;
+  background: var(--eco-verde); color: #fff;
+  border-radius: 50%; font-size: .95rem;
+}
+.navbar-eco .nav-link { color: var(--eco-texto); font-size: .9rem; }
+.navbar-eco .nav-link:hover { color: var(--eco-verde); }
+
+/* Evita que la navbar fija tape los títulos al navegar con los enlaces */
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+/* ===== Hero ===== */
+.hero-img { width: 100%; border-radius: 1.25rem; box-shadow: 0 10px 30px rgba(31,77,58,.12); }
+/* ===== Catálogo ===== */
+.form-control, .form-select { border-color: var(--eco-borde); border-radius: .5rem; }
+
+.producto-card {
+  border: 1px solid var(--eco-borde);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  transition: transform .2s, box-shadow .2s;
+}
+.producto-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(31,77,58,.12); }
+.producto-card img { aspect-ratio: 4 / 3; object-fit: cover; }
+.producto-categoria {
+  font-size: .65rem; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--eco-verde);
+}
+.producto-precio { font-weight: 600; color: var(--eco-verde); margin-bottom: .5rem; }
+.producto-card .card-text { font-size: .8rem; }
+
+.sin-resultados {
+  background: #fff; border-radius: 1rem; padding: 3rem 1rem;
+}
+.sin-resultados i { font-size: 2rem; color: var(--eco-verde); }
+/* ===== Contacto ===== */
+.contacto-datos li { display: flex; align-items: center; gap: .9rem; margin-bottom: 1rem; }
+.contacto-datos i {
+  display: grid; place-items: center; flex-shrink: 0;
+  width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  background: var(--eco-salvia); color: var(--eco-verde);
+}
+.contacto-datos small { display: block; font-size: .7rem; color: #7a807c; }
+.contacto-datos span { font-size: .85rem; font-weight: 500; color: var(--eco-verde); }
+
+.form-contacto {
+  padding: 1.75rem; border: 1px solid var(--eco-borde); border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+/* ===== Footer ===== */
+.footer-eco { background: var(--eco-salvia); border-top: 1px solid var(--eco-borde); }
+.footer-eco strong { color: var(--eco-verde); }
+
+/* ===== Responsive ===== */
+@media (max-width: 575.98px) {
+  .hero { padding-top: 2rem !important; }
+  .hero h1 { font-size: 2.2rem; }
+  .form-contacto { padding: 1.25rem; }
 }
