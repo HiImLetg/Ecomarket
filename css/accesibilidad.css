@@ -1,0 +1,25 @@
+/* Accesibilidad. Responsable: Miembro 4 */
+
+/* Enlace "Saltar al contenido": solo se ve al enfocarlo con Tab */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 2000;
+}
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* Foco visible para navegar con teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
